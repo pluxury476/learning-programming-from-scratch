@@ -8,7 +8,9 @@ for i in range(1, n + 1):
         total += i
     else:
         total -= i
-print(total)  # щас будет еще один
+print(total)  
+
+# щас будет еще один
 
 total = 0
 for i in range(1, 10 + 1):
