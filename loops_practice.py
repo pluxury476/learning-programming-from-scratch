@@ -47,7 +47,7 @@ print("---")
 
 # задача 8 гласные и согласные буквы
 
-word = input("Введите слово: ")
+word = input("Введите слово:")
 vowels = 0
 consonants = 0
 for letter in word:
@@ -56,3 +56,16 @@ for letter in word:
     else:
         consonants += 1
         print(f"Гласные: {vowels}, Согласные: {consonants}")
+
+print("--- ")
+
+#задача 9 выведи сила от 1 до 30 если делится на 3 - fizz, на 5 - buzz, на 15 - fizzbuzz,иначе - само число
+for i in range(1,31):
+    if i % 15 == 0:
+        print( "fizzbuzz") 
+    elif i % 3 == 0:
+        print("fizz")
+    elif i % 5 == 0:
+        print("buzz")
+    else:
+        print(i)
