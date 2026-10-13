@@ -69,3 +69,15 @@ for i in range(1,31):
         print("buzz")
     else:
         print(i)
+
+print("---")
+
+#задача 10 спроси слово,спроси гласные,но обязательно через continue
+word = input("Введите слово: ")
+count = 0
+for letter in word:
+    if letter not in "аеёиоуыэюя":
+        continue 
+    count += 1 
+print(f"гласные: {count}")
+    
