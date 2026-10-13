@@ -42,3 +42,17 @@ for i in range(1, n + 1):
     print(" " * (n - i) + "*" * (2 * i - 1))
 for i in range(n - 1, 0, -1):
         print(" " * (n - i) + "*" * (2 * i - 1))
+
+print("---")
+
+# задача 8 гласные и согласные буквы
+
+word = input("Введите слово: ")
+vowels = 0
+consonants = 0
+for letter in word:
+    if letter in "аеёиоуыэюя":
+        vowels += 1
+    else:
+        consonants += 1
+        print(f"Гласные: {vowels}, Согласные: {consonants}")
