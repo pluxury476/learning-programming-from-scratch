@@ -92,4 +92,8 @@ for i in range(1, 11):
     elif total % 5 == 0:
         continue
     print(f"7 * {i} = {total}")
+
+print("---")
+
+
     

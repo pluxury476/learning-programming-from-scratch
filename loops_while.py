@@ -50,3 +50,15 @@ while True:
     total += number
 print(f"Сумма всех введенных чисел: {total}")
 
+print('---')
+
+#задача 6 сумма до повышения на 50
+total = 0
+while True:
+    number = int(input())
+    total += number
+    if total > 50:
+        break
+print(f"Сумма превысила 50! Итог: {total}")
+
+
