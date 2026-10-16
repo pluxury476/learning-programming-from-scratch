@@ -80,4 +80,16 @@ for letter in word:
         continue 
     count += 1 
 print(f"гласные: {count}")
+
+print("---")
+
+#задача 11 таблица умножения на 7 пропусти строки где результат делится на 5 и остановись если больше 50
+
+for i in range(1, 11):
+    total = 7 * i
+    if total > 50:
+        break
+    elif total % 5 == 0:
+        continue
+    print(f"7 * {i} = {total}")
     
