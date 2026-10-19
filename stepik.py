@@ -115,6 +115,23 @@ print(result)
 
 
 ###СПИСКИ 
+#задача 1
+list = ['хлеб', 'молоко', 'яйца',]
+list.append("Сыр")
+print(f"Длина: {len(list)}")
+
+#задача 2 max min
+list = [5, 8, 10, 40,2]
+maxwal = list[0]
+minwal = list[0]
+for n in list:
+    if n > maxwal:
+        maxwal = n
+    elif n < minwal:
+        minwal = n
+print(f"Максимум {maxwal}")
+print(f"Минимум {minwal}")
+
 
 
 
