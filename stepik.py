@@ -1,4 +1,4 @@
-## степик задачи(скипнул до 7.4,плюс дипсик задачи немного 
+# степик задачи(скипнул до 7.4,плюс дипсик задачи немного 
 
 # задача 1 Выведи числа от 1 до 10, но остановись, когда дойдёшь до 5
 for i in range(1, 11):
@@ -84,3 +84,34 @@ print(f"{word.replace("о", "а")}")
 word = input("Предложение: ")
 words = word.split()
 print(f"Слов: {len(words)}")
+
+#задача 14 убрать все пробелы
+word = input("Предложение: ")
+print(f"{word.replace(" ","")}")
+
+#задача 15 заглавные первые буквы слов 
+word = input("Предложение: ")
+print(f"{word.title()}")
+
+#задача 16 перемешанный палидром
+word = input("Слово: ")
+if word.lower() == word.lower()[::-1]:
+    print("Это палиндром")
+else:
+    print("Не палиндрон")
+
+#задача 17 шифр цезаря легкий 
+alp = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+word = "Привет"
+result = ""
+for i in word:
+    if i in alp:
+        pos = alp.index(i)
+        post = (pos + 1) % len(alp)
+        result += alp[post]
+    else:
+        result += i
+print(result)
+
+
+
