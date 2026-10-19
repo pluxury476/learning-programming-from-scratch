@@ -114,4 +114,8 @@ for i in word:
 print(result)
 
 
+###СПИСКИ 
+
+
+
 

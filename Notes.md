@@ -44,3 +44,17 @@ age = 25
 print(f"Меня зовут {name}, мне {age} лет")
 # Меня зовут Антон, мне 25 лет
 
+###списки шпора
+fruits = ["яблоко", "банан", "вишня"]
+Что	Как	Пример
+Индекс	[]	fruits[0] → "яблоко"
+Последний	[-1]	fruits[-1] → "вишня"
+Длина	len()	len(fruits) → 3
+Добавить в конец	.append(x)	fruits.append("груша")
+Удалить по значению	.remove(x)	fruits.remove("банан")
+Удалить по индексу	.pop(i)	fruits.pop(0)
+Отсортировать	.sort()	fruits.sort()
+Развернуть	.reverse()	fruits.reverse()
+Пройти циклом	for	for f in fruits: print(f)
+
+
