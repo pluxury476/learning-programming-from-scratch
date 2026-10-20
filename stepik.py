@@ -122,17 +122,39 @@ print(f"Длина: {len(list)}")
 
 #задача 2 max min
 list = [5, 8, 10, 40,2]
-maxwal = list[0]
-minwal = list[0]
+max_wal = list[0]
+min_wal = list[0]
 for n in list:
-    if n > maxwal:
+    if n > max_wal:
         maxwal = n
-    elif n < minwal:
+    if n < min_wal:
         minwal = n
-print(f"Максимум {maxwal}")
-print(f"Минимум {minwal}")
+print(f"Максимум {max_wal}")
+print(f"Минимум {min_wal}")
 
+#задача 3 привыкаю к спискам
+colors = ["красный", "зелёный", "синий"]
+print(colors[0])
+print(colors[-1])
 
+colors.append("желтый")
+print(colors)
 
+colors[1] = "оранжевый"
+print(colors)
 
+colors.remove("синий")
+print(colors)
 
+for c in colors:
+    print("Цвет:", c)
+
+print("Всего цветов:", len(colors))
+
+задача 4 фильтр оценок
+grades = [3, 5, 2, 4, 5, 3, 4, 2, 5]
+good_grades = []
+for n in grades:
+    if n >= 4:
+        good_grades.append(n)
+print(good_grades)
