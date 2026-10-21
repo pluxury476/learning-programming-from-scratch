@@ -151,10 +151,34 @@ for c in colors:
 
 print("Всего цветов:", len(colors))
 
-задача 4 фильтр оценок
+#задача 4 фильтр оценок
 grades = [3, 5, 2, 4, 5, 3, 4, 2, 5]
 good_grades = []
 for n in grades:
     if n >= 4:
         good_grades.append(n)
 print(good_grades)
+
+#задание 5 только черные 
+grades = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+chetko = []
+for n in grades:
+    if n % 2 == 0:
+        chetko.append(n)
+print(chetko)
+
+#задача 6 сумма хороших оценок 
+grades = [3, 5, 2, 4, 5, 3, 4, 2, 5]
+chetko = []
+for n in grades:
+    if n >= 4:
+        chetko.append(n)
+print(f"Сумма: {sum(chetko)}")
+
+#задача 7 слова длиннее 4 букв
+words = ["кот", "собака", "дом", "дерево", "ёж", "компьютер"]
+long_word = []
+for n in words:
+    if len(n) > 4:
+        long_word.append(n)
+print(long_word)
