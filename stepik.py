@@ -199,5 +199,35 @@ for n in numbers:
         positive.append(n)
 print(positive)
 
+#задача 10 подсчет слов
+word = input("Предложение: ")
+words = word.split()
+print(f"Слов: {len(words)}")
+
+ #задача 11 фильтр имен
+names = ["Антон", "Ян", "Екатерина", "Лев", "Александр"]
+short_names = []
+for n in names:
+    if len(n) <= 4:
+        short_names.append(n)
+print(short_names)
+
+#задача 12 заглавные строки
+words = ["привет", "как", "дела"]
+capitalized = []
+for n in words:
+    capitalized.append(n.capitalize())
+print(capitalized)
+
+#задача 13 выведи длину и выведи наоборот
+word = input("Слово: ")
+print(f"Длина: {len(word)}")
+print(f"Наоборот: {word[::-1]}")
+if word == word[::-1]:
+    print("Это палиндром")
+else:
+    print("Обычное слово")
+
+
 
 
