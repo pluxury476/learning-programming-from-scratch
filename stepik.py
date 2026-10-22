@@ -182,3 +182,22 @@ for n in words:
     if len(n) > 4:
         long_word.append(n)
 print(long_word)
+
+#задача 8 любимые игры
+games = []
+for n in range(3):
+    game = input(f"Игра {n + 1}:")
+    games.append(game)
+print(f"Мои игры: {games}")
+print(f"Всего: {len(games)}")
+
+#задача 9 фильтрация
+numbers = [5, -3, 10, -7, 2, 0, -1]
+positive = []
+for n in numbers:
+    if n > 0:
+        positive.append(n)
+print(positive)
+
+
+
