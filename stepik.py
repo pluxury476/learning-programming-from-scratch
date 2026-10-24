@@ -228,6 +228,26 @@ if word == word[::-1]:
 else:
     print("Обычное слово")
 
+#задача 14 спортсмены 
+athletes = ["Иван", "Олег", "Анна", "Дмитрий", "Ян"]
+short_names = []
+for n in athletes:
+    if len(n) <= 4:
+        short_names.append(n)
+print(short_names)
+
+#задача 15 секретное слово
+word = input("Слово: ")
+print(f"Наоборот: {word[::-1]}")
+print(f"Заглавные: {word.upper()}")
+print(f"Длина: {len(word)}")
+
+
+
+   
+
+
+    
 
 
 
