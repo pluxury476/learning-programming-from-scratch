@@ -242,6 +242,21 @@ print(f"Наоборот: {word[::-1]}")
 print(f"Заглавные: {word.upper()}")
 print(f"Длина: {len(word)}")
 
+## функции
+#задача 1 функция приветствие
+def say_hello():
+    print("Привет, я внутри функции!")
+    print("Меня вызвали, и я работаю,")
+
+say_hello()
+say_hello()
+say_hello()
+
+#задача 2 функция приветствие с именем
+def introduce(name, age):
+    print(f"Меня зовут {name}, мне {age} лет.")
+introduce("Иван",18)
+
 
 
    
