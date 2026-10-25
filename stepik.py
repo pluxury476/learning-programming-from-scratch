@@ -294,13 +294,18 @@ grades = [3, 5, 2, 4, 5, 3, 4, 2, 5]
 filtred_grades = good_grades(grades)
 print(f"Хорошие оценки: {filtred_grades}")
 
+for i in range(1, 11):
+    print(i)
 
+numbers = [3, 7, 2, 9, 4]
+total = 0
+for n in numbers:
+    total += n
+print(total)
 
-
-   
-
-
-    
-
-
-
+numbers = [1, 4, 7, 10, 13, 16, 20]
+total = 0
+for n in numbers:
+    if n % 2 == 0:
+        total += n
+print(total)
