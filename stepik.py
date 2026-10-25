@@ -257,6 +257,44 @@ def introduce(name, age):
     print(f"Меня зовут {name}, мне {age} лет.")
 introduce("Иван",18)
 
+#задача 3 учимся return
+def add(a, b):
+    return a + b
+
+def multiply(a, b):
+    return a * b
+
+result_add = add(5, 3)
+print(f"Сумма: {result_add}")
+
+result_mult = multiply(4, 6)
+print(f"Произведение: {result_mult}")
+
+result = multiply(add(2,3), 10) #функция внутри функции
+print(f"Результат композиции: {result}")
+
+#задача 4 функции для среднего балла
+def get_average(grades):
+    return sum(grades) / len(grades)
+
+# проверка функции
+grades = [4, 5, 3, 4, 5, 5, 4]
+average = get_average(grades)
+print(f"Средний балл: {average}")
+
+#задача 5 фильтрация хороших оценок 
+def good_grades(grades):
+    good = []
+    for n in grades:
+        if n >= 4:
+            good.append(n)
+    return good
+
+grades = [3, 5, 2, 4, 5, 3, 4, 2, 5]
+filtred_grades = good_grades(grades)
+print(f"Хорошие оценки: {filtred_grades}")
+
+
 
 
    
