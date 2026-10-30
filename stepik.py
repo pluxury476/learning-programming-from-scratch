@@ -309,3 +309,62 @@ for n in numbers:
     if n % 2 == 0:
         total += n
 print(total)
+
+num = int(input())
+prev = num % 10
+num = num // 10
+is_sorted = True
+while num > 0:
+    current = num % 10
+    if current < prev:
+        is_sorted = False
+        break
+    prev = current
+    num = num // 10
+if is_sorted:
+    print("YES")
+else:
+    print("NO")
+
+n = int(input())
+count = 0
+while n > 0:
+    last = n % 10
+    if last % 2 == 0:
+        count += 1
+        print(f"{count}-я четная цифра равна {last}")
+    n = n // 10
+print(f"Всего четных цифр: {count}")
+
+# найти наименьший делитель числа   
+
+# вложенные циклы 
+total = 0
+for n in range(1,14):
+    for k in range(1,13):
+        for m in range(1,12 ):
+            if 28 * n + 30 * k + 31 * m == 365:
+                total += 1
+                print("n =", n, "k =", k, "m =", m)
+print("Общее кольчество натуральных решений =", total)
+
+total = 0
+for x in range(1,11):
+    for y in range(1,21):
+        for z in range(1,201):
+            if 10 * x + 5 * y + 0.5 * z == 100 and x + y + z == 100:
+                total += 1
+                print("x =", x, "y =", y, "z =", z)
+print("Общее количество =", total)
+
+for a in range(1, 151):
+    for b in range(a, 151):
+        for c in range(b, 151):
+            for d in range(c, 151):
+                sum = a ** 5 + b ** 5 + c ** 5 + d ** 5
+                e = sum ** (1/5)
+                e = round(e)
+                if e ** 5 == sum and e <= 150:
+                    print(a + b + c + d + e)
+                    break
+
