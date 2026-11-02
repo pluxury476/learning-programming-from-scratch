@@ -368,3 +368,110 @@ for a in range(1, 151):
                     print(a + b + c + d + e)
                     break
 
+## внутренние циклы 2
+n = int(input())
+for i in range(1, n + 1):
+    print(i, end='')
+    for j in range(1, i + 1):
+        if i % j == 0: 
+            print("+", end='')
+    print()
+
+
+# Дано натуральное число число n,напишите программу которая печатает численний треугольник с высатой равной n
+n = int(input())
+total = 1
+for i in range(1, n + 1):
+    for j in range(1,i +1):
+        print(total, end=' ')
+        total += 1
+    print()
+
+# На вход программе подается два натуральных числа a и b (a<b). Напишите программу, которая находит все простый сила от a до b включительно.
+a = int(input())
+b = int(input())
+for n in range(a, b + 1):
+    prime = True
+    for j in range(2, n):
+        if n % j == 0:
+            prime = False
+            break
+    if prime and n > 1:
+        print(n)
+
+#сумма факториалов
+a = int(input())
+total = 0
+factorial = 1
+for i in range(1, a + 1):
+    factorial *= i
+    total += factorial
+print(total)    
+
+
+n = int(input())
+m = int(input())
+found = False
+for banana in range(1, n):
+    for diamond in range(1, n):
+        for deer in range(1, n):
+            if banana + 3 * diamond + 2 * deer == m:
+                print(f"{banana} + 3x{diamond} + 2x{deer} = {m}")
+                found = True
+
+if not found:
+    print("Нет решения")
+
+n = int(input())
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print(j, end='')
+
+    for k in range(i - 1,0, -1):
+        print(k, end='')
+    print()
+
+# Как вы могли заметить, Тимур очень любит математику. Это проявляется во всём – даже когда он видит время на часах. Особенно Тимуру нравятся такие моменты времени, когда число часов h , возведенное в некоторую натуральную степень n, равняется количеству минут m
+n = int(input())
+for h in range(24):
+    m = h ** n
+    if m < 60:
+        print(f"{h:02d}:{m:02d}")
+
+#дано число n > 99,найдите её третью цифру сначала
+n = int(input())
+while n >= 1000:
+    n //= 10
+third_digit = n % 10
+print(third_digit)
+
+n = int(input())
+last_digit = n % 10
+count_3 = 0
+count_last = 0
+count_even = 0
+sun_5 = 0
+prod_7 = 1
+count_0_5 = 0
+while n > 0:
+    digit = n % 10
+    if digit == 3:
+        count_3 += 1
+    if digit == last_digit:
+        count_last += 1
+    if digit % 2 == 0:
+        count_even += 1
+    if digit > 5:
+        sun_5 += digit
+    if digit > 7:
+        prod_7 *= digit
+    if digit == 0 or digit == 5:
+        count_0_5 += 1
+    n //= 10
+
+print(count_3)
+print(count_last)
+print(count_even)
+print(sun_5)
+print(prod_7)
+print(count_0_5)
