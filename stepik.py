@@ -475,3 +475,131 @@ print(count_even)
 print(sun_5)
 print(prod_7)
 print(count_0_5)
+
+# ## задачи степик 9.1
+#1
+s = "In 2010, someone paid 10k bitcoin for two pizzas."
+print(s[7])
+
+#2
+s = "In 2010, someone paid 10k Bitcoin for two pizzas."
+print(s[39])
+
+#3
+n = "abcdefg"
+for c in range(0, len(n), 2):
+    print(n[c])
+
+# 4
+n = "abcdefg"
+for c in range(1, len(n) + 1):
+    print(n[-c])
+
+# 5 
+f = 'Петров'
+i = 'Иван'
+o = 'Сидорович'
+initials = f[0] + i[0] + o[0]
+print(initials)
+
+# 6
+n = input()
+s = 0
+for i in range(len(n)):
+    s += int(n[i])
+print(s)
+
+#7
+n = input()
+s = "Цифр нет"
+for i in range(len(str(n))):
+    if n[i] in "0123456789":
+        s = "Цифра"
+        break
+print(s)
+
+#8
+n = input()
+star = 0
+plus = 0
+for i in range(len(n)):
+    if i == "*":
+        star += 1
+    elif i == "+":
+        plus += 1
+print(f"Символ * встречается {star} раз")
+print(f"Символ + встречается {plus} раз")
+
+#9
+a = input()
+count = 0
+for i in range(len(a) - 1):
+    if a[i] == a[i + 1]:
+        count += 1
+print(count)
+
+#10
+s = input()
+gl = 'ауоыиэяюёеАУОЫИЭЯЮЁЕ'
+sog = 'бвгджзйклмнпрстфхцчшщБВГДЖЗЙКЛМНПРСТФХЦЧШЩ'
+son, cons = 0, 0
+for c in s:
+    if c in gl:
+        son += 1
+    if c in sog:
+        cons += 1
+print('Количество гласных букв равно', son)
+print('Количество согласных букв равно', cons)
+
+# 11
+n = int(input())
+d = ''
+while n > 0:
+    d = str(n % 2) + d
+    n = n // 2
+print(d)
+
+print("---")
+
+s = input()
+for i in range(len(s)):
+    if i >= len(s) // 2 :
+         print(s[i], end='')
+
+#строки
+word = input()
+print(len(word))
+print(word * 3)
+print(word[0])
+print(word[0: 3])
+print(word[-3:])
+print(word[::-1])
+print(word[1:])
+print(word[1:-1])
+
+#
+word = input()
+print(word[2])
+print(word[-2])
+print(word[:5])
+print(word[0:-2])
+print(word[0::2])
+print(word[1::2])
+print(word[::-1])
+print(word[::-2])
+
+#На вход программе подаётся строка текста. Напишите программу, которая разрежет её на две равные части, переставит их местами и выведет на экран.
+word = input()
+length = len(word)
+half_length = length // 2
+first_half = word[:half_length]
+second_half = word[half_length:]    
+print(second_half + first_half)
+
+
+
+
+
+
+
+
