@@ -596,7 +596,105 @@ first_half = word[:half_length]
 second_half = word[half_length:]    
 print(second_half + first_half)
 
+text = input()
+first = text.find("a")
+last = text.rfind("a")
+result = text[first + 1:last]
+print(result)
 
+# повтор
+
+n = int(input())
+count = 0
+for i in range(5):
+    if n % 2 == 0:
+        count += 1
+    n = n // 10
+print(count)
+
+n = int(input())
+for i in range(n, 0, -1):
+    print(i)
+print("Старт!")
+
+word = input()
+n = input()
+if n in word:
+    print("Да")
+else:
+    print('Нет')
+
+word = input()
+print(word[::-1])
+print(word.upper())
+
+word = input()
+count = 0
+for char in word:
+    if char in "аеёиоуыэюя":
+        count += 1
+print(count)
+
+n = int(input())
+for i in range(n):
+    for j in range(n):
+        print("*", end=' ')
+    print()
+
+max_weight = 0
+weight = ''
+for i in range(3):
+    w =  input()
+    current_weight = 0
+
+    for char in w:
+        current_weight += ord(char)
+    if current_weight > max_weight:
+        max_weight = current_weight
+        weight = w
+print(weight)
+first = input()
+max_word = first
+min_word = first
+
+for i in range(3):
+    word = input()
+    if word > max_word:
+        max_word = word
+    if word < min_word:
+        min_word = word
+last_min = min_word[-1]
+last_max = max_word[-1]
+
+code_min = ord(last_min)
+code_max = ord(last_max)
+
+magic = (code_min * code_max) ** 2
+print(magic)
+
+total = 0
+for i in range(5):
+    num = int(input())
+    if num % 2 == 0:
+        total += num
+print(total)
+
+word = input()
+print(f"Ввод: {word}")
+print(f"Вывод: {word[1]} {word[-1]}")
+
+word = input()
+polid = word[::-1]
+if word == polid:
+    print("YES")
+else:
+    print("NO")
+
+num = int(input())
+for i in range(num):
+    for j in range(num):
+        print("*", end='')
+    print()
 
 
 
